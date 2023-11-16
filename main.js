@@ -1,5 +1,12 @@
 new class {
     constructor() {
-        console.log(window.location.href)
+        this.main()
+    }
+    getUrlData() {
+        return window.location.href.split("/url-seo/")[1].split('/')
+
+    }
+    main() {
+        console.log(this.getUrlData())
     }
 }

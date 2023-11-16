@@ -9,6 +9,6 @@ new class {
         }, [])
     }
     main() {
-        console.log(this.getUrlData())
+        document.querySelector('h1').innerHTML = this.getUrlData().join(', ')
     }
 }
